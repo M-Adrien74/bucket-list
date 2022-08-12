@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block main %}
+    <div class="wishes">
+        <p class="wish">Description : </p>
+        <p class="bdd">{{ unWish.description }}</p>
+    </div>
+    <div class="wishes">
+        <p class="wish">Categorie : </p>
+        <p class="bdd">
+            {{ unWish.category.name }}</p>
+
+    </div>
+    <div class="wishes">
+        <p class="wish">Par : </p>
+        <p class="bdd">{{ unWish.auteur }}</p>
+    </div>
+    <div class="wishes">
+        <p class="wish">Date de création : </p>
+        <p class="bdd">{{ unWish.dateCreated | date('d-m-y à h:i' ) }}</p>
+    </div>
+    <a href="{{ path('app_supprimer', {'wish': unWish.id}) }}"><img class="poubelle"
+                                                                    src="{{ asset('css/media/poubelle-de-recyclage.png') }}"
+                                                                    alt="poubelle"></a>
+{% endblock %}

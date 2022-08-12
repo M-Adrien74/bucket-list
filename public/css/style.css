@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-right: 5em;
+    margin-top: 2em;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: chartreuse;
+    font-family: 'Oleo Script Swash Caps', sans-serif;
+    font-size: 2em;
+}
+
+.logo {
+    width: 76px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    font-family: 'Lobster', cursive;
+}
+
+footer {
+    border-top: black 2px solid;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.copyright img {
+    margin-right: 1em;
+}
+
+.wish {
+    font-size: 2em;
+    text-decoration: underline;
+    margin-right: 1em;
+
+}
+
+.wishes {
+    display: flex;
+    align-items: center;
+    font-family: 'Oleo Script Swash Caps', sans-serif;
+}
+
+.bdd {
+    margin-top: 1em;
+    font-weight: initial;
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+}
+
+.input {
+    width: 15%;
+    display: flex;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.button {
+    font-weight: bold;
+    border-radius: 15%;
+    height: 3em;
+    background: rgba(100, 203, 18, 0.55);
+}
+
+.souhait {
+    display: grid;
+    grid-area: 1/1/1/1;
+}
+
+.poubelle {
+    width: 2%;
+    margin-left: 7em;
+}
+
+#wishes_wishes {
+    width: 10%;
+    margin-bottom: 1em;
+}
+
+
+.blockConnection {
+    display: flex;
+    margin: 2%;
+
+}
+
+.blockConnection a {
+    margin-right: 5%;
+    font-size: 3vh;
+}
+
+.forgotPW {
+    font-family: Arial;
+!important;
+    color: black;
+    font-size: 1em;
+}
