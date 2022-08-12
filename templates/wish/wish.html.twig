@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block main %}
+    <div>{{ form(wishForm) }}</div>
+    <ul class="souhait">
+        {% for wish in wishTab %}
+            <li><a href="{{ path('app_detail', {'id': wish.id}) }}">{{ wish.titre }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

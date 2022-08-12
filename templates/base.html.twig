@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}My Bucket-List!{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="icon" href="{{ asset('css/media/favicon.png') }}">
+
+
+</head>
+<body>
+
+{% block body %}{% endblock %}
+<div>
+    {% if not app.user %}
+        <div class="blockConnection">
+            <a href="{{ path('app_login') }}">Se connecter</a>
+            <a href="{{ path('app_register') }}">S'enregistrer</a>
+        </div>
+    {% endif %}
+
+
+</div>
+{% if app.user %}
+    <a href="{{ path('app_logout') }}">Se déconnecter</a>
+{% endif %}
+<div class="header">
+
+    <h1>B<img src="{{ asset('css/media/logo (1).png') }}" alt="U" class="logo">CKET LIST</h1>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="{{ path('main_home') }}">Accueil</a></li>
+        <li><a href="{{ path('main_about') }}">A propos</a></li>
+        <li><a href="{{ path('app_list') }}">Liste de souhaits</a></li>
+    </ul>
+</nav>
+
+{% block main %} {% endblock %}
+<footer>
+    <div class="copyright">
+        <p>&copy; Bucket-List</p> - {{ 'now' | date("Y") }}
+    </div>
+</footer>
+
+
+</body>
+</html>
